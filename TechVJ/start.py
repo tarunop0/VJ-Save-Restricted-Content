@@ -65,9 +65,8 @@ async def send_start(client: Client, message: Message):
     buttons = [[
         InlineKeyboardButton("💀 Developer", url = "https://t.me/EL_Pita_Shree")
     ],[
-        InlineKeyboardButton('♠️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Interworld_backup'),
-        InlineKeyboardButton('😉 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Interworld_Backup'),
-        InlineKeyboardButton('📚 Books', url='https://t.me/KitabHai')
+        InlineKeyboardButton('♠️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/KitabHai'),
+        InlineKeyboardButton('😉 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Interworld_Backup')
     ]]
 
     # Define the inline keyboard markup
