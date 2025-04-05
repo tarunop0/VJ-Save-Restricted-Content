@@ -30,6 +30,9 @@ https://t.me/c/xxxx/101 - 120
 ```
 
 __note that space in between doesn't matter__"""
+```
+Owner : @EL_Pita_Shree (𝔾𝖍𝖔𝖘𝖙)
+```
        
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
