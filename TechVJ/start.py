@@ -60,16 +60,26 @@ def progress(current, total, message, type):
 async def send_start(client: Client, message: Message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
+
+    # Define the buttons for inline keyboard
     buttons = [[
-        InlineKeyboardButton("❣️ Developer", url = "https://t.me/EL_Pita_Shree")
+        InlineKeyboardButton("Developer ☠️", url = "https://t.me/EL_Pita_Shree")
     ],[
         InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/KitabHai'),
         InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Interworld_Backup')
     ]]
+
+    # Define the inline keyboard markup
     reply_markup = InlineKeyboardMarkup(buttons)
-    await client.send_message(
+
+    # Define the image URL or path (you can use a URL or local file path)
+    image_url = "https://i.ibb.co/MDpVXD9z/file-1148.jpg"  # Replace with your image URL
+
+    # Send a photo along with the message
+    await client.send_photo(
         chat_id=message.chat.id, 
-        text=f"<b>👋 Hi {message.from_user.mention}, I am Save Restricted Content Bot, I can send you restricted content by its post link.\n\nFor downloading restricted content /login first.\n\nKnow how to use bot by - /help</b>", 
+        photo=image_url,  # Image URL or local file path
+        caption=f"<b>👋 Hi {message.from_user.mention}, I am Save Restricted Content Bot, I can send you restricted content by its post link.\n\nFor downloading restricted content /login first.\n\nKnow how to use bot by - /help</b>", 
         reply_markup=reply_markup, 
         reply_to_message_id=message.id
     )
