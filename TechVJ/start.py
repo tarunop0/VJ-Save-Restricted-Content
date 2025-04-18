@@ -63,10 +63,10 @@ async def send_start(client: Client, message: Message):
 
     # Define the buttons for inline keyboard
     buttons = [[
-        InlineKeyboardButton("Developer ☠️", url = "https://t.me/EL_Pita_Shree")
+        InlineKeyboardButton("𝐃ᴇᴠᴇʟᴏᴘᴇʀ ☠️", url = "https://t.me/EL_Pita_Shree")
     ],[
-        InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/KitabHai'),
-        InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Interworld_Backup')
+        InlineKeyboardButton('𝐁ᴏᴏᴋs 𝐂ʜᴀɴɴᴇʟ 📚', url='https://t.me/KitabHai'),
+        InlineKeyboardButton('𝐔ᴘᴅᴀᴛᴇ 𝐂ʜᴀɴɴᴇʟ', url='https://t.me/Interworld_Backup')
     ]]
 
     # Define the inline keyboard markup
