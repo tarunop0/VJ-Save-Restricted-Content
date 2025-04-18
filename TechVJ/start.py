@@ -79,7 +79,7 @@ async def send_start(client: Client, message: Message):
     await client.send_photo(
         chat_id=message.chat.id, 
         photo=image_url,  # Image URL or local file path
-        caption=f"<b><blockquote expandable> Hello {message.from_user.mention}😇/nI am Save Restricted Content Bot, I can send you restricted content by its post link. </blockquote>\n<blockquote>For downloading restricted content /login first.\n\nKnow how to use bot by - /help</blockquote></b>", 
+        caption=f"<b><blockquote expandable> Hello {message.from_user.mention}😇\nI am Save Restricted Content Bot, I can send you restricted content by its post link. </blockquote>\n<blockquote>For downloading restricted content /login first.\n\nKnow how to use bot by - /help</blockquote></b>", 
         reply_markup=reply_markup, 
         reply_to_message_id=message.id
     )
