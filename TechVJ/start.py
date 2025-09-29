@@ -73,8 +73,7 @@ async def send_start(client: Client, message: Message):
     reply_markup = InlineKeyboardMarkup(buttons)
 
     # Define the image URL or path (you can use a URL or local file path)
-    image_url = "https://envs.sh/LyH.jpg
-"  # Replace with your image URL
+    image_url = "https://envs.sh/LyH.jpg"  # Replace with your image URL
 
     # Send a photo along with the message
     await client.send_photo(
