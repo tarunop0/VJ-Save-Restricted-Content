@@ -35,9 +35,9 @@ async def main(bot: Client, message: Message):
         await message.reply("**Your Are Already Logged In. First /logout Your Old Session. Then Do Login.**")
         return 
     user_id = int(message.from_user.id)
-    phone_number_msg = await bot.ask(chat_id=user_id, text="<b>Please send your phone number which includes country code</b>\n<b>Example:</b> <code>+13124562345, +9171828181889</code>")
+    phone_number_msg = await bot.ask(chat_id=user_id, text="<blockquote>Please send your phone number which includes country code</b>\n<b>Example:</blockquote> <blockquote><code>+13124562345, +9171828181889</code></blockquote>")
     if phone_number_msg.text=='/cancel':
-        return await phone_number_msg.reply('<b>process cancelled !</b>')
+        return await phone_number_msg.reply('<blockquote>process cancelled !</blockquote>')
     phone_number = phone_number_msg.text
     client = Client(":memory:", API_ID, API_HASH)
     await client.connect()
@@ -81,7 +81,7 @@ async def main(bot: Client, message: Message):
             await db.set_session(message.from_user.id, session=string_session)
     except Exception as e:
         return await message.reply_text(f"<b>ERROR IN LOGIN:</b> `{e}`")
-    await bot.send_message(message.from_user.id, "<b>Account Login Successfully.\n\nIf You Get Any Error Related To AUTH KEY Then /logout first and /login again</b>")
+    await bot.send_message(message.from_user.id, "<blockquote>Account Login Successfully.\n\nIf You Get Any Error Related To AUTH KEY Then /logout first and /login again</blockquote>")
 
 
 # Don't Remove Credit Tg - @VJ_Botz
