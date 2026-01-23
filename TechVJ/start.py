@@ -65,7 +65,7 @@ async def send_start(client: Client, message: Message):
     buttons = [[
         InlineKeyboardButton("𝐃ᴇᴠᴇʟᴏᴘᴇʀ ☠️", url = "https://t.me/EL_Pita_Shree")
     ],[
-        InlineKeyboardButton('𝐁ᴏᴏᴋs 𝐂ʜᴀɴɴᴇʟ 📚', url='https://t.me/KitabHai'),
+        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴘ 📽️', url='https://t.me/TheInterworldGroup'),
         InlineKeyboardButton('𝐔ᴘᴅᴀᴛᴇ 𝐂ʜᴀɴɴᴇʟ', url='https://t.me/Interworld_Backup')
     ]]
 
